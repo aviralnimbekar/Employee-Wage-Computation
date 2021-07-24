@@ -4,6 +4,7 @@ echo "Welcome to Employee Wage Computation Program"
 
 randomcheck=$((RANDOM % 3))
 wage_Per_Hrs=20
+working_Day_Per_month=20
 
 case $randomcheck in
 	1) echo "employee is full time present"
@@ -14,5 +15,5 @@ case $randomcheck in
 	   working_Hrs=0				;;
 esac
 
-salary=$((wage_Per_Hrs * working_Hrs))
+salary=$((wage_Per_Hrs * working_Day_Per_month * working_Hrs))
 echo $salary
